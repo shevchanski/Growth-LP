@@ -1,0 +1,24 @@
+/* importing stylesheet files from components folder */
+@import url(./components/main-wrapper.css);
+@import url(./components/title.css);
+@import url(./components/header.css);
+@import url(./components/button.css);
+@import url(./components/nav.css);
+@import url(./components/background.css);
+@import url(./components/introduction-section.css);
+@import url(./components/tools-section.css);
+@import url(./components/link.css);
+
+
+html {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* setting margin to class */
+.mt-24 {
+	margin-top: 24px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}

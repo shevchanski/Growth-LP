@@ -1,0 +1,59 @@
+.introduction-section {
+	padding-top: 96px;
+}
+
+.introduction-section .title {
+	max-width: 824px;
+}
+
+.introduction-section .intro-description {
+	max-width: 612px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.introduction-section .product-introduction {
+	margin-top: 40px;
+	display: grid;
+	column-gap: 23px;
+	max-height: 413px;
+	grid-template-rows: [first-row] 90px [second-row] 2fr [last-row];
+	grid-template-columns: [first-col] 612px [second-col] 400px [third-col] 190px [last-col];
+}
+
+.introduction-section .product-introduction .intro-image {
+	display: block;
+}
+
+.introduction-section .product-introduction .button-wrapper {
+	grid-area: first-row/first-col/second-row/second-col;
+	justify-self: start;
+	display: flex;
+}
+
+.introduction-section .product-introduction .team-intro-wrapper {
+	grid-area: second-row/first-col;
+	align-self: end;
+}
+
+.introduction-section .product-introduction .sales-graph-wrapper {
+	grid-area: first-row/second-col/last-row/third-col;
+	align-self: end;
+	position: relative;
+}
+
+.introduction-section .product-introduction .sales-graph-wrapper .graph-lines {
+	position: absolute;
+	top: 95px;
+	left: -65px;
+	max-width: 428px;
+}
+
+.introduction-section .product-introduction .team-call-wrapper {
+	grid-area: first-row/third-col/last-row/last-col;
+	align-self: end;
+}
+
+.introduction-section .product-introduction .team-call-wrapper img:not(:last-child) {
+	margin-bottom: 33px;
+}

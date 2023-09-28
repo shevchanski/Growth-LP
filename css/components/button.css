@@ -1,0 +1,35 @@
+/* common styles for all button */
+.classic-btn {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+	padding: 16px 32px;
+	border-radius: 16px;
+	background: #F5F5F5;
+	border: none;
+	appearance: none;
+	display: inline-flex;
+	align-items: center;
+	height: 57px;
+}
+
+.classic-btn:not(:first-child) {
+	margin-left: 16px;
+}
+
+.classic-btn.btn-bg-blue {
+	color: #fff;
+	background: #4891FF;
+}
+
+.classic-btn.small-btn {
+	border-radius: 12px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 150%;
+	padding: 12px 24px;
+}
+
+.classic-btn .demo-icon {
+	margin-right: 10px;
+}
