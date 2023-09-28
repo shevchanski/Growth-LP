@@ -1,0 +1,101 @@
+/* general styles for tool section */
+
+.tools-section {
+	padding-top: 104px;
+	padding-bottom: 106px;
+}
+
+.tools-section .title {
+	max-width: 836px;
+	margin: 0 auto;
+}
+
+.tools-section>.description {
+	max-width: 620px;
+	margin: 24px auto 0;
+	text-align: center;
+}
+
+
+
+/* here is styles for sections with className "tool" */
+.tools-section .tool {
+	display: flex;
+	margin-top: 66px;
+	column-gap: 24px;
+}
+
+.tools-section .tool:not(:first-child) {
+	margin-top: 98px;
+}
+
+.tools-section .tool:nth-child(even) {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+
+/* stylized only section with description about each tool */
+.tools-section .tool .tool-info {
+	max-width: 513px;
+}
+
+.tools-section .tool .tool-info .description {
+	margin-bottom: 40px;
+}
+
+
+/* this part of properties set style for tag <detail> and his child <summary> */
+.tools-section .tool .tool-info .possibility {
+	border-bottom: 1px solid #DFDEE2;
+	padding: 20px 0;
+	color: #494A4D;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+.tools-section .tool .tool-info .possibility[open] {
+	border-color: #131316;
+}
+
+.tools-section .tool .tool-info .possibility[open] a {
+	display: inline;
+}
+
+.tools-section .tool .tool-info .possibility[open] summary {
+	margin-bottom: 16px;
+}
+
+.tools-section .tool .tool-info .possibility summary {
+	list-style: none;
+	position: relative;
+	font-size: 24px;
+	line-height: 120%;
+	color: #131316;
+}
+
+.tools-section .tool .tool-info .possibility a {
+	position: absolute;
+	right: 0;
+	display: none;
+	width: 12px;
+	height: 10px;
+	transition: 2s;
+}
+
+.tools-section .tool .tool-info .possibility summary::-webkit-details-marker {
+	display: none;
+}
+
+/* </detail></summary> */
+
+
+/* here is a styles for section with tool's introduction */
+.tools-section .tool .tool-intro {
+	flex-grow: 1;
+	max-width: 728px;
+}
+
+.tools-section .tool .tool-intro .tool-img {
+	width: 100%;
+}
