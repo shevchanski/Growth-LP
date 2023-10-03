@@ -1,0 +1,16 @@
+.separator {
+	width: 100%;
+	background: #fff;
+	/* border: none; */
+	padding: 0 90px;
+}
+
+.separator_bg_black {
+	background: #131316;
+}
+
+.separator__line {
+	/* margin: 0 auto; */
+	/* max-width: 1265px; */
+	border: 0.5px solid #494949;
+}

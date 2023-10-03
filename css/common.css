@@ -8,17 +8,6 @@
 @import url(./components/introduction-section.css);
 @import url(./components/tools-section.css);
 @import url(./components/link.css);
-
-
-html {
-	font-family: 'Poppins', sans-serif;
-}
-
-/* setting margin to class */
-.mt-24 {
-	margin-top: 24px;
-}
-
-.mt-20 {
-	margin-top: 20px;
-}
+@import url(./components/how-works.css);
+@import url(./components/separator.css);
+@import url(./components/feedbacks.css);

@@ -17,19 +17,20 @@
 	margin-left: 16px;
 }
 
-.classic-btn.btn-bg-blue {
+.classic-btn_bg_blue {
 	color: #fff;
 	background: #4891FF;
 }
 
-.classic-btn.small-btn {
+.classic-btn_size_s {
 	border-radius: 12px;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 150%;
 	padding: 12px 24px;
+	/* font-family: Poppins; */
 }
 
-.classic-btn .demo-icon {
+.classic-btn__icon {
 	margin-right: 10px;
 }

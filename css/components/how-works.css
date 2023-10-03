@@ -1,0 +1,50 @@
+.how-works {
+	padding: 97px 0 104px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.how-works_bg_black {
+	color: #fff;
+	background-color: #131316;
+}
+
+.how-works__title {
+	max-width: 767px;
+	margin-bottom: 44px;
+}
+
+.how-works__video {
+	width: 835px;
+	height: 486px;
+	background-image: url(../../img/video-preview.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.how-works__play-button {
+	width: 81px;
+	height: 81px;
+	position: absolute;
+	background: #fff;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-clip: padding-box;
+	transition: all 1.5s;
+	transform-origin: top left;
+}
+
+.how-works__play-button_hover:hover {
+	/* border: 5px solid rgba(255, 255, 255, 0.753); */
+	/* transform: scale(115%) translate(-50%, -50%); */
+	background: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+
+.how-works__button {
+	margin-top: 64px;
+}
