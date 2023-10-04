@@ -11,3 +11,16 @@
 @import url(./components/how-works.css);
 @import url(./components/separator.css);
 @import url(./components/feedbacks.css);
+@import url(./components/pricing.css);
+@import url(./components/price-card.css);
+
+
+/* basic margin classes which are common */
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-24 {
+	margin-top: 24px;
+}

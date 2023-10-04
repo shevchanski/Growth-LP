@@ -1,0 +1,23 @@
+.pricing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 104px 0 121px;
+}
+
+
+
+.pricing__description {
+	margin-bottom: 64px;
+}
+
+.pricing__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.pricing__note {
+	margin-top: 58px;
+}
