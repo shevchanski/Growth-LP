@@ -24,7 +24,7 @@
 	column-gap: 24px;
 }
 
-.tools-section .tool:not(:first-child) {
+.tools-section .tool:not(:first-of-type) {
 	margin-top: 98px;
 }
 
@@ -97,4 +97,33 @@
 
 .tools-section .tool .tool-intro .tool-img {
 	width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+	.tools-section {
+		padding: 64px 16px;
+	}
+
+	/* for section with classname "tool" */
+	.tools-section .tool,
+	.tools-section .tool:nth-child(even) {
+		flex-direction: column;
+		row-gap: 24px;
+		margin-top: 40px;
+	}
+
+	/* style for description paragraph */
+	.tools-section .tool .tool-info .description {
+		margin: 8px 0 20px;
+	}
+
+	.tools-section .tool .tool-info .possibility {
+		font-size: 16px;
+		line-height: 160%;
+	}
+
+	.tools-section .tool .tool-info .possibility summary {
+		font-size: 20px;
+		line-height: 120%;
+	}
 }

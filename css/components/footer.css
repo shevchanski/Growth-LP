@@ -1,0 +1,26 @@
+.footer {
+	padding: 109px 205px 40px 90px;
+}
+
+.footer_bg_black {
+	color: #fff;
+	background-color: #131316;
+}
+
+.footer__content {
+	margin-top: 42px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__media-link {
+	margin-top: 40px;
+}
+
+.footer__media-link:not(:first-child) {
+	margin-left: 16px;
+}
+
+.footer__privacy {
+	margin-top: 65px;
+}

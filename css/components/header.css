@@ -5,8 +5,8 @@
 	padding: 20px 90px 0;
 }
 
-.header .logo {
-	font-size: 28px;
-	font-weight: 600;
-	line-height: 32px;
+@media screen and (max-width: 375px) {
+	.header {
+		padding: 20px 16px 0;
+	}
 }

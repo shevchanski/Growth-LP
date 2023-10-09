@@ -1,0 +1,18 @@
+.social-media {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+.social-media__link {
+	display: block;
+	transition: 0.2s;
+}
+
+.social-media__link_hover:hover {
+	transform: scale(1.2);
+}
+
+.social-media__logo {
+	display: block;
+}

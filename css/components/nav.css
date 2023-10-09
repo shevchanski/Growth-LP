@@ -1,18 +1,47 @@
 /* styles for navigation-bar */
-
-.nav .nav-list {
+.nav__list {
 	display: flex;
 	align-items: center;
 }
 
-.nav .nav-list .nav-item:not(:first-child) {
-	margin-left: 40px;
-}
-
-.nav .nav-list .nav-item .nav-link {
-	text-decoration: none;
+.nav__item {
 	color: #131316;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 150%;
+	transition: 0.2s;
+}
+
+.nav__link {
+	padding: 0 20px;
+}
+
+.nav__item_hover:hover {
+	color: #1313169e;
+	text-decoration: underline;
+}
+
+.nav__toggle-btn {
+	display: none;
+}
+
+@media screen and (max-width: 375px) {
+	.nav__list {
+		display: none;
+	}
+
+	.nav__toggle-btn {
+		display: block;
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		margin: 0;
+		appearance: none;
+		border: none;
+		background: transparent;
+	}
+
+	.nav__icon {
+		display: block;
+	}
 }

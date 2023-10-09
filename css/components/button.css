@@ -13,9 +13,6 @@
 	height: 57px;
 }
 
-.classic-btn:not(:first-of-type) {
-	margin-left: 16px;
-}
 
 .classic-btn_bg_blue {
 	color: #fff;
@@ -33,4 +30,12 @@
 
 .classic-btn__icon {
 	margin-right: 10px;
+}
+
+@media screen and (max-width: 375px) {
+	.classic-btn {
+		justify-content: center;
+		font-size: 16px;
+		line-height: 150%;
+	}
 }

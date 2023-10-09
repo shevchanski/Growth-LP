@@ -1,59 +1,112 @@
-.introduction-section {
+.introduction {
 	padding: 96px 90px;
 }
 
-.introduction-section .title {
+.introduction__title {
 	max-width: 824px;
 }
 
-.introduction-section .intro-description {
+.introduction__description {
 	max-width: 612px;
 	font-size: 20px;
 	line-height: 32px;
+	margin-top: 24px;
 }
 
-.introduction-section .product-introduction {
+.introduction__examples {
 	margin-top: 40px;
-	display: grid;
+	display: flex;
 	column-gap: 23px;
 	max-height: 413px;
-	grid-template-rows: [first-row] 90px [second-row] 2fr [last-row];
-	grid-template-columns: [first-col] 612px [second-col] 400px [third-col] 190px [last-col];
+	/* grid-template-rows: [first-row] 1fr [second-row] 2fr [last-row];
+	grid-template-columns: [first-col] 3fr [second-col] 2fr [third-col] 1fr [last-col]; */
 }
 
-.introduction-section .product-introduction .intro-image {
+.introduction__left-side {
+	max-width: 612px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* row-gap: 80px; */
+}
+
+.introduction__right-side {
+	display: flex;
+	max-width: 613px;
+	column-gap: 23px;
+}
+
+
+.introduction__image {
 	display: block;
 }
 
-.introduction-section .product-introduction .button-wrapper {
-	grid-area: first-row/first-col/second-row/second-col;
-	justify-self: start;
+.introduction__buttons-wrapper {
 	display: flex;
+	justify-self: start;
 }
 
-.introduction-section .product-introduction .team-intro-wrapper {
-	grid-area: second-row/first-col;
-	align-self: end;
-}
 
-.introduction-section .product-introduction .sales-graph-wrapper {
-	grid-area: first-row/second-col/last-row/third-col;
-	align-self: end;
+.introduction__sales-graph {
 	position: relative;
+	flex-shrink: 1;
 }
 
-.introduction-section .product-introduction .sales-graph-wrapper .graph-lines {
+.introduction__graph-lines {
 	position: absolute;
 	top: 95px;
 	left: -65px;
 	max-width: 428px;
+	display: none;
 }
 
-.introduction-section .product-introduction .team-call-wrapper {
-	grid-area: first-row/third-col/last-row/last-col;
-	align-self: end;
+.introduction__team-call {
+	position: relative;
+	top: -16%;
+	flex-shrink: 1;
 }
 
-.introduction-section .product-introduction .team-call-wrapper img:not(:last-child) {
+.introduction__team-call .introduction__image:not(:last-child) {
 	margin-bottom: 33px;
+}
+
+@media screen and (max-width: 375px) {
+	.introduction {
+		padding: 80px 16px 0;
+		text-align: center;
+	}
+
+	.introduction__description {
+		margin-top: 16px;
+	}
+
+	.introduction__examples {
+		flex-direction: column;
+		row-gap: 18px;
+		max-height: fit-content;
+	}
+
+	.introduction__right-side {
+		column-gap: 18px;
+	}
+
+
+	/* styles for buttons wrapper */
+	.introduction__buttons-wrapper {
+		margin-bottom: 59px;
+		flex-direction: column;
+	}
+
+	.introduction__button:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.introduction__sales-graph {
+		max-width: 218px;
+	}
+
+	/* style for team-call block */
+	.introduction__team-call {
+		max-width: 106px;
+	}
 }
