@@ -12,11 +12,11 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: 150%;
+	margin-bottom: 8px;
 }
 
 .subscription__description {
 	color: #131316;
-	margin-top: 8px;
 	line-height: 150%;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .subscription__input {
-	width: 220px;
+	flex-basis: 220px;
 	flex-shrink: 1;
 	border: 1px solid #BEBDC6;
 	border-radius: 8px;
@@ -37,7 +37,7 @@
 	font-weight: 400;
 	line-height: 150%;
 	padding: 12px;
-	outline: none;
+	min-width: 0;
 }
 
 .subscription__input_focus:focus {
@@ -53,4 +53,21 @@
 	border-radius: 8px;
 	padding: 12px 20px;
 	height: inherit;
+	flex: 0 0 121px;
+}
+
+@media screen and (max-width: 375px) {
+	.subscription {
+		width: 100%;
+		padding: 24px;
+	}
+
+	.subscription__title {
+		font-size: 18px;
+		margin-bottom: 4px;
+	}
+
+	.subscription__form {
+		column-gap: 8px;
+	}
 }

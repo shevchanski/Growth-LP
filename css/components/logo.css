@@ -3,4 +3,12 @@
 	font-size: 28px;
 	font-weight: 600;
 	line-height: 32px;
+	position: relative;
+}
+
+.logo__line {
+	margin-left: 4px;
+	vertical-align: top;
+	position: absolute;
+	top: -3px
 }

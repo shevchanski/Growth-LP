@@ -20,4 +20,45 @@
 
 .pricing__note {
 	margin-top: 58px;
+	color: #131316;
+}
+
+/* Tablet styling | styles applied when device-width <= 768px */
+@media screen and (max-width: 768px) {
+	.pricing {
+		padding: 64px 32px 60px;
+	}
+
+	.pricing__title {
+		margin-bottom: 16px;
+	}
+
+	.pricing__description {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.pricing__content {
+		row-gap: 32px;
+		width: 100%;
+	}
+
+	.pricing__note {
+		text-align: center;
+		margin-top: 46px;
+	}
+}
+
+/* Mobile styling | styles applied when device-width <= 375px */
+@media screen and (max-width: 375px) {
+	.pricing__content {
+		flex-direction: column;
+		row-gap: 32px;
+		width: 100%;
+	}
+
+	.pricing__note {
+		font-size: 14px;
+		max-width: 293px;
+	}
 }

@@ -1,11 +1,14 @@
+/* styling section "Introduction" */
 .introduction {
 	padding: 96px 90px;
 }
 
+/* style of title */
 .introduction__title {
 	max-width: 824px;
 }
 
+/* style of description */
 .introduction__description {
 	max-width: 612px;
 	font-size: 20px;
@@ -13,23 +16,23 @@
 	margin-top: 24px;
 }
 
+/* style of section with examples of company's product  | this section has two children: left and right side*/
 .introduction__examples {
 	margin-top: 40px;
 	display: flex;
 	column-gap: 23px;
 	max-height: 413px;
-	/* grid-template-rows: [first-row] 1fr [second-row] 2fr [last-row];
-	grid-template-columns: [first-col] 3fr [second-col] 2fr [third-col] 1fr [last-col]; */
 }
 
+/* left side of examples-section */
 .introduction__left-side {
 	max-width: 612px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	/* row-gap: 80px; */
 }
 
+/* right side of examples-section */
 .introduction__right-side {
 	display: flex;
 	max-width: 613px;
@@ -44,6 +47,7 @@
 .introduction__buttons-wrapper {
 	display: flex;
 	justify-self: start;
+	column-gap: 16px;
 }
 
 
@@ -62,14 +66,49 @@
 
 .introduction__team-call {
 	position: relative;
-	top: -16%;
+	top: -66px;
 	flex-shrink: 1;
+	max-height: 413px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 33px;
 }
 
-.introduction__team-call .introduction__image:not(:last-child) {
-	margin-bottom: 33px;
+/* Tablet styling | styles applied when device-width <= 768px */
+@media screen and (max-width: 768px) {
+	.introduction {
+		padding: 80px 32px;
+	}
+
+	.introduction__examples {
+		column-gap: 12px;
+	}
+
+	.introduction__left-side {
+		flex-basis: 42%;
+		row-gap: 16px;
+		justify-content: flex-start;
+	}
+
+	.introduction__right-side {
+		flex-basis: 58%;
+		column-gap: 12px;
+	}
+
+	.introduction__team-call {
+		max-height: 264px;
+		top: -43px;
+		row-gap: 22px;
+	}
+
+	.introduction__buttons-wrapper {
+		flex-direction: column;
+		row-gap: 12px;
+	}
 }
 
+/* Mobile styling | styles applied when device-width <= 375px */
 @media screen and (max-width: 375px) {
 	.introduction {
 		padding: 80px 16px 0;
@@ -86,19 +125,19 @@
 		max-height: fit-content;
 	}
 
+	.introduction__left-side {
+		row-gap: 0;
+	}
+
 	.introduction__right-side {
 		column-gap: 18px;
 	}
-
 
 	/* styles for buttons wrapper */
 	.introduction__buttons-wrapper {
 		margin-bottom: 59px;
 		flex-direction: column;
-	}
-
-	.introduction__button:not(:last-child) {
-		margin-bottom: 20px;
+		row-gap: 20px;
 	}
 
 	.introduction__sales-graph {
@@ -108,5 +147,8 @@
 	/* style for team-call block */
 	.introduction__team-call {
 		max-width: 106px;
+		row-gap: 16px;
+		top: -38px;
+		max-height: 232px;
 	}
 }

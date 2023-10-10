@@ -23,10 +23,7 @@
 
 /* basic margin classes which are common */
 
-.mt-20 {
-	margin-top: 20px;
-}
-
-.mt-24 {
-	margin-top: 24px;
+section {
+	color: #131316;
+	background-color: #fff;
 }

@@ -3,8 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, min user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +15,13 @@
 <body>
 	<div class="main-wrapper">
 		<header class="header bg-white">
-			<div class="logo">Growth<sup><img src="./img/logo-line.svg" alt="logo-line"></sup></div>
+			<div class="logo">Growth<img class="logo__line" src="./img/logo-line.svg" alt="logo-line"></div>
 			<nav class="nav">
 				<ul class="nav__list">
 					<li class="nav__item nav__item_hover"><a href="#features" class="nav__link">Features</a></li>
 					<li class="nav__item nav__item_hover"><a href="#about-us" class="nav__link">About us</a></li>
 					<li class="nav__item nav__item_hover"><a href="#" class="nav__link">Blog</a></li>
-					<li class="nav__item nav__item_hover"><button class="classic-btn classic-btn_size_s">Blog</button></li>
+					<li class="nav__item nav__item_hover"><button class="classic-btn classic-btn_size_s">Log in</button></li>
 				</ul>
 				<button class="nav__toggle-btn"><img class="nav__icon" src="./img/nav-btn.svg"
 						alt="burger button icon"></button>
@@ -140,6 +139,7 @@
 				<h2 class="h2 how-works__title">See how it works and get started
 					in less than 2 minutes</h2>
 				<div class="how-works__video">
+					<img src="./img/video-preview.png" alt="" class="how-works__video-bg">
 					<div class="how-works__play-button how-works__play-button_hover">
 						<img src="./img/play-button.svg" alt="Icon for play button">
 					</div>
@@ -246,7 +246,7 @@
 		</main>
 
 		<footer class="footer footer_bg_black">
-			<div class="logo">Growth<sup><img class="logo__icon" src="./img/logo-line.svg" alt="logo-line"></sup></div>
+			<div class="logo">Growth<img class="logo__line" src="./img/logo-line.svg" alt="logo-line"></div>
 			<div class="footer__content">
 				<div class="subscription">
 					<h4 class="subscription__title">Subscribe to newsletter</h4>
@@ -260,39 +260,43 @@
 							Subscribe</button>
 					</form>
 				</div>
-				<nav class="resources-nav">
-					<ul class="resources-nav__list">
-						<li class="resources-nav__title">Company</li>
-						<li class="resources-nav__item resources-nav__item_hover"><a href="#about-link"
-								class="resources-nav__link">About</a></li>
-						<li class="resources-nav__item resources-nav__item_hover"><a href="" class="resources-nav__link">Our
-								Process</a></li>
-						<li class="resources-nav__item resources-nav__item_hover"><a href="" class="resources-nav__link">Join
-								our
-								team</a></li>
-					</ul>
-				</nav>
-				<nav class="resources-nav">
-					<ul class="resources-nav__list">
-						<li class="resources-nav__title">Resources</li>
-						<li class="resources-nav__item resources-nav__item_hover"><a href=""
-								class="resources-nav__link">News</a></li>
-						<li class="resources-nav__item resources-nav__item_hover"><a href=""
-								class="resources-nav__link">Research</a>
-						</li>
-						<li class="resources-nav__item resources-nav__item_hover"><a href=""
-								class="resources-nav__link">Recent
-								Projects</a>
-						</li>
-					</ul>
-				</nav>
-				<nav class="resources-nav">
-					<ul class="resources-nav__list">
-						<li class="resources-nav__title">Contact</li>
-						<li class="resources-nav__item resources-nav__item_hover"><a href="mailto:hello@growthapp.com"
-								class="resources-nav__link">hello@growthapp.com</a></li>
-					</ul>
-				</nav>
+				<div class="footer__resources-links">
+					<nav class="resources-nav">
+						<ul class="resources-nav__list">
+							<li class="resources-nav__title">Company</li>
+							<li class="resources-nav__item resources-nav__item_hover"><a href="#about-link"
+									class="resources-nav__link">About</a></li>
+							<li class="resources-nav__item resources-nav__item_hover"><a href=""
+									class="resources-nav__link">Our
+									Process</a></li>
+							<li class="resources-nav__item resources-nav__item_hover"><a href=""
+									class="resources-nav__link">Join
+									our
+									team</a></li>
+						</ul>
+					</nav>
+					<nav class="resources-nav">
+						<ul class="resources-nav__list">
+							<li class="resources-nav__title">Resources</li>
+							<li class="resources-nav__item resources-nav__item_hover"><a href=""
+									class="resources-nav__link">News</a></li>
+							<li class="resources-nav__item resources-nav__item_hover"><a href=""
+									class="resources-nav__link">Research</a>
+							</li>
+							<li class="resources-nav__item resources-nav__item_hover"><a href=""
+									class="resources-nav__link">Recent
+									Projects</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="resources-nav">
+						<ul class="resources-nav__list">
+							<li class="resources-nav__title">Contact</li>
+							<li class="resources-nav__item resources-nav__item_hover"><a href="mailto:hello@growthapp.com"
+									class="resources-nav__link">hello@growthapp.com</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 			<div>
 				<!--Why do i need use this div? Because without this wrapper doesn't work pseudo-class :not(:first-child/:first-of-type) for footer__media-link-->

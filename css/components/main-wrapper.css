@@ -4,6 +4,7 @@
 	margin: 0 auto;
 }
 
+/* Mobile styling | styles applied when device-width <= 375px */
 @media screen and (max-width: 375px) {
 	.main-wrapper {
 		width: 100%;

@@ -4,11 +4,13 @@
 	padding: 104px 90px 106px;
 }
 
+/* style for title in tools-section */
 .tools-section .title {
 	max-width: 836px;
 	margin: 0 auto;
 }
 
+/* style for direct child with class name "description"  */
 .tools-section>.description {
 	max-width: 620px;
 	margin: 24px auto 0;
@@ -91,7 +93,6 @@
 
 /* here is a styles for section with tool's introduction */
 .tools-section .tool .tool-intro {
-	flex-grow: 1;
 	max-width: 728px;
 }
 
@@ -99,6 +100,27 @@
 	width: 100%;
 }
 
+/* Tablet styling | styles applied when device-width <= 768px */
+@media screen and (max-width: 768px) {
+	.tools-section {
+		padding: 80px 32px;
+	}
+
+	.tools-section .tool .tool-info {
+		flex-basis: 50%;
+	}
+
+	.tools-section .tool .tool-info .title {
+		margin-bottom: 8px;
+	}
+
+	.tools-section .tool .tool-intro {
+		flex-basis: 50%;
+	}
+
+}
+
+/* Mobile styling | styles applied when device-width <= 375px */
 @media screen and (max-width: 375px) {
 	.tools-section {
 		padding: 64px 16px;
@@ -109,7 +131,8 @@
 	.tools-section .tool:nth-child(even) {
 		flex-direction: column;
 		row-gap: 24px;
-		margin-top: 40px;
+		margin-top: 40px !important;
+		/*temporary fix*/
 	}
 
 	/* style for description paragraph */
@@ -117,10 +140,12 @@
 		margin: 8px 0 20px;
 	}
 
+	/* styles for possibilities in tag details*/
 	.tools-section .tool .tool-info .possibility {
 		font-size: 16px;
 		line-height: 160%;
 	}
+
 
 	.tools-section .tool .tool-info .possibility summary {
 		font-size: 20px;

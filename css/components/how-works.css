@@ -1,29 +1,40 @@
+/* style of section how-it-works */
 .how-works {
-	padding: 97px 0 104px;
+	padding: 97px 90px 104px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+/* modifier of block "how-works" */
 .how-works_bg_black {
 	color: #fff;
 	background-color: #131316;
 }
 
+/* title's style */
 .how-works__title {
 	max-width: 767px;
 	margin-bottom: 44px;
 }
 
+/* styling block with video */
 .how-works__video {
-	width: 835px;
-	height: 486px;
-	background-image: url(../../img/video-preview.png);
+	max-width: 835px;
+	max-height: 486px;
+	/* background-image: url(../../img/video-preview.png); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	margin-bottom: 64px;
 }
 
+/* modifier of video block */
+.how-works__video-bg {
+	size: cover;
+}
+
+/* play button style */
 .how-works__play-button {
 	width: 81px;
 	height: 81px;
@@ -38,13 +49,35 @@
 	transform-origin: top left;
 }
 
+/* modifier of play button */
 .how-works__play-button_hover:hover {
-	/* border: 5px solid rgba(255, 255, 255, 0.753); */
-	/* transform: scale(115%) translate(-50%, -50%); */
 	background: rgba(255, 255, 255, 0.5);
 	cursor: pointer;
 }
 
-.how-works__button {
-	margin-top: 64px;
+/* Tablet styling | styles applied when device-width <= 768px */
+@media screen and (max-width: 768px) {
+	.how-works {
+		padding: 80px 32px;
+	}
+}
+
+/* Mobile styling | styles applied when device-width <= 375px */
+@media screen and (max-width: 375px) {
+	.how-works {
+		padding: 45px 16px 67px;
+	}
+
+	.how-works__title {
+		margin-bottom: 56px;
+	}
+
+	.how-works__video {
+		margin-bottom: 40px;
+	}
+
+	.how-works__play-button {
+		width: 40px;
+		height: 40px;
+	}
 }

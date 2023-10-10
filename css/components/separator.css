@@ -14,3 +14,17 @@
 	/* max-width: 1265px; */
 	border: 0.5px solid #494949;
 }
+
+/* Tablet styling | styles applied when device-width <= 768px */
+@media screen and (max-width: 768px) {
+	.separator {
+		padding: 0 32px;
+	}
+}
+
+/* Mobile styling | styles applied when device-width <=3 75px */
+@media screen and (max-width: 375px) {
+	.separator {
+		padding: 0 16px;
+	}
+}

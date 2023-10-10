@@ -27,3 +27,15 @@
 	color: #bcc2c39b;
 	text-decoration: underline;
 }
+
+@media screen and (max-width: 375px) {
+	.resources-nav__item {
+		color: #BCC2C3;
+		font-family: Poppins;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		/* 24px */
+	}
+}
