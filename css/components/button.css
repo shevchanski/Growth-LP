@@ -12,8 +12,13 @@
 	align-items: center;
 	height: 57px;
 	justify-content: center;
+	transition: 0.2s;
 }
 
+.classic-btn_hover:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
 
 .classic-btn_bg_blue {
 	color: #fff;

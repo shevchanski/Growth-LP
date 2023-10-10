@@ -55,6 +55,11 @@
 	line-height: 160%;
 }
 
+.tools-section .tool .tool-info .possibility:hover {
+	cursor: pointer;
+	border-color: #13131684;
+}
+
 .tools-section .tool .tool-info .possibility[open] {
 	border-color: #131316;
 }
@@ -79,9 +84,16 @@
 	position: absolute;
 	right: 0;
 	display: none;
-	width: 12px;
-	height: 10px;
+	width: fit-content;
+	height: 100%;
 	transition: 2s;
+	padding-left: 25px;
+}
+
+.tools-section .tool .tool-info .possibility .link-arrow {
+	display: block;
+	width: 12px;
+	height: 100%;
 }
 
 .tools-section .tool .tool-info .possibility summary::-webkit-details-marker {
